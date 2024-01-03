@@ -1,0 +1,32 @@
+#game-settings-form-container {
+    &.container {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+    }
+
+    & .title-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    & .title {
+        font-weight: bolder;
+        font-size: 8rem;
+        color: var(--color-primary);
+    }
+
+    & .card {
+        width: 400px;
+        background-color: var(--white);
+        padding: var(--padding);
+        border-radius: var(--border-radius);
+    }
+}

@@ -1,0 +1,28 @@
+@import url('../variables.css');
+
+input {
+    height: var(--height-default);
+    padding: 6px var(--padding);
+
+    color: var(--font-color);
+    
+    background-color: var(--white);
+    border: var(--border-default);
+    border-radius: var(--border-radius);
+    outline: none;
+    box-shadow: var(--box-shadow-default);
+
+    &:focus{
+        border-color: var(--color-primary);
+        outline: none;
+        box-shadow: var(--box-shadow-primary);
+    }
+
+    &::placeholder {
+        opacity: 0.4;
+    }
+
+    &.block {
+        width: 100%;
+    }
+}

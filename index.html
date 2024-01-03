@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Ervilhão</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/components/form.js"></script>
+</head>
+
+<body>
+    <section id="game-settings-form-container" class="container">
+        <div class="title-container">
+            <h1 class="title">Show do Ervilhão</h1>
+        </div>
+
+        <div class="card">
+            <form id="game-settings-form" class="form gutter">
+                <div class="form-item wrapper">
+                    <label>Nome</label>
+
+                    <input id="player-name" name="player-name" type="text" class="block" placeholder="Nome"
+                        autocomplete="off">
+                </div>
+
+                <div class="form-item wrapper">
+                    <label>Dificuldade</label>
+
+                    <select id="game-difficulty" name="game-difficulty" class="block" placeholder="Dificuldade">
+                        <option value="random">Aleatória</option>
+                        <option value="easy">Fácil</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="hard">Difícil</option>
+                        <option value="very-hard">Muito difícil</option>
+                    </select>
+                </div>
+
+                <div class="form-item wrapper">
+                    <button type="submit">Começar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script type="application/javascript">
+    const formId = 'game-settings-form';
+    const form = new Form(
+        formId,
+        ['player-name', 'game-difficulty']
+    );
+
+    document.getElementById(formId).addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const values = form.getValues();
+        console.log('### values', values);
+    });
+</script>
+
+</html>

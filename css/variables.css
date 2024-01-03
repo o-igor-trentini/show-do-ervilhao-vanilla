@@ -1,0 +1,23 @@
+:root {
+    /* Cores */
+    --white: #FFF;
+    --background-color-default: #2A2A2A;
+    --color-primary: #5CA170; /* rgb(92, 161, 112) */
+    
+
+    /* Fonte */
+    --font-color: #24292E;
+    --font-family-mono: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+
+    /* Espaçamento */
+    --padding: 12px;
+    --border-radius: 8px;
+    --line-height: 20px;
+    --height-default: 40px;
+
+    /* Outros */
+    --box-shadow-default: rgba(92, 161, 112, 0.2) 0px 1px 0px 0px inset;
+    --box-shadow-primary: rgba(92, 161, 112, 0.3) 0px 0px 0px 3px;
+    --border-default: 1px solid #e1e4e8;
+    --border-primary: 1px solid var(--color-primary);
+}
